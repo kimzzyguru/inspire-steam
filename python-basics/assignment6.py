@@ -1,11 +1,16 @@
 #Name: Valentine Kimani
 #Date: 17/02/2026
-#Program to display a diamond and triangle pattern using asterisks
+#Program to display a diamond pattern using asterisks
 
-# Diamond pattern
-for i in range(5):
-    for j in range(5 - i):
-        print(" ", end="")
-    for k in range(2 * i + 1):
-        print("*", end="")
-    print()
+def print_diamond(n):
+    for i in range(n):
+        print(" " * (n - i - 1) + "*" * (2 * i + 1))
+    for i in range(n - 2, -1, -1):
+        print(" " * (n - i - 1) + "*" * (2 * i + 1))
+
+print_diamond(5)
+
+def print_triangle(n):
+    for i in range(n):
+        print(" " * (n - i - 1) + "*" * (2 * i + 1))
+print_triangle(5)
