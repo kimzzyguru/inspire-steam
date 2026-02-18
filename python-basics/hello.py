@@ -12,3 +12,4 @@ weight=75
 print(f"I am {age} years old") 
 print(f"I am also {height} metres")
 print(f"And weigh {weight} kgs")
+
