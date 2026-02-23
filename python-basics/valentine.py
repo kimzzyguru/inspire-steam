@@ -6,7 +6,7 @@ favouruite_sport ="chess"
 grade = "A"
 hobby = "coding"
 course = "python programming"
-favourite_food = "BAE"
+favourite_food = "cake"
 print("My favourite sport is", favouruite_sport)
 print("My grade is", grade) 
 print("My hobby is", hobby)
