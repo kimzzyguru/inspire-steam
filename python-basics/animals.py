@@ -7,16 +7,16 @@ class Animal():
         self.species = species
         self.weight = weight
         self.food = food
-    def grow(self,weight):
-        weight = 1.1 * weight
-        print(f"The animal weighs {weight}kgs")
+    def grow(self):
+       self.weight *= 1.1
+       print(f"The animal weighs {self.weight}kgs")
 
-    def eat(self,food):
-        print(f"The animal eats {food}")
+    def eat(self):
+        print(f"The animal eats {self.food}")
 
 
 class Dog(Animal):
-    def __init__(self,color,height,breed):
+    def __init__(self,species,weight,food,color,height,breed):
         super().__init__(species,weight,food)
         self.color = color
         self.breed = breed
@@ -29,13 +29,22 @@ class Dog(Animal):
 
 class Horse(Animal):
     def __init__(self,species,weight,food):
-        self.species = species
-        self.weight = weight
-        self.food = food
-    def grow(self,weight):
-        weight = 1.1 * weight
-        print(f"The animal weighs {weight}kgs")
+        super().__init__(species,weight,food)
+    
+        
 
-    def neighs(self,food):
+    def neighs(self):
         print(f"The horse says neigh neigh")
+
+# Create a dog
+dog = Dog("Dog", 20, "Dog food", "Brown", 50, "Labrador")
+dog.eat()
+dog.grow()
+dog.barks()
+
+# Create a Horse
+horse = Horse("Horse", 150, "Hay")
+horse.eat()
+horse.grow()
+horse.neighs()
 
