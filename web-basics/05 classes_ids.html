@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module05:classes, ids</title>
+    <style>
+        body{
+            background-color: black; 
+            color: beige;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #page-wrapper{
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        .Band-photos{
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+        #photos{
+            background-color: antiquewhite;
+        }
+        #listen-section{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 500px;
+            height: 500px;
+            background-color: beige;
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+    id: unique, only one element in a page should have it
+    
+    class: reusable. used to identify multiple elements together
+    -->
+    <div id="page-wrapper">
+        <h1>Watendawili</h1>
+        <p>Disc: Band from Africa, cultivating african culture</p>
+        <div id="photos">
+             <img class="Band-photos" src="./images/642d2114d7af8500247e3487-ferrari-499p-hypercar-gallery.avif" alt="car photo">
+            <img class="Band-photos" src="./images/gun.jpg" alt="gun photo">
+        </div>
+
+        <div id="listen-section">
+            <p class="song">latest song</p>
+            <p class="song">earlier song</p>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
